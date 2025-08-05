@@ -1,0 +1,202 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #cdb4db;
+  padding-bottom: 60px; /* Bottom navbar জায়গা রাখার জন্য */
+}
+
+/* Top navbar */
+.top_navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  background: #F9D9BE;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.balance h5 {
+  font-size: 18px;
+  color: #333;
+  background-color: yellow;
+  padding: 7px 12px;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+/* Bottom navbar */
+.bottom_nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  background: #F9D9BE;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #ccc;
+}
+
+.nav_item {
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav_item i {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.nav_item.active,
+.nav_item:hover {
+  color: #e65f25;
+}
+
+/* Slider container */
+.slider-container {
+  width: 97%;
+  margin: 80px auto;
+  margin-bottom: 0px;
+  
+  height: 280px; /* navbar নিচে জায়গা রাখার জন্য */
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  position: relative;
+  background: #fff;
+  padding: 2px;
+  border: 2px solid black;
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+/* Slide images */
+.slider img {
+  position: absolute;
+  top: 0;
+  left: 100%;  /* প্রথমে সব ছবি ডান পাশে থাকে */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: left 0.8s ease;
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Active slide - স্ক্রিনে থাকা ছবি */
+.slider img.active-slide {
+  left: 0;
+  z-index: 10;
+}
+
+/* পুরাতন ছবি বামে সরে যাওয়ার ক্লাস */
+.slider img.slide-out-left {
+  left: -100%;
+  z-index: 5;
+}
+
+.lebel1{
+    padding-bottom: 20px;
+    
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 10px ;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px 10px;
+}
+
+
+.lebel1 h2{
+    margin-top: 30px;
+    margin-left: 15px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e65f25;
+}
+
+.lebel1 h5{
+   margin-top: 10px;
+   margin-left: 20px;
+   font-size: 20px;
+   color: #ccd5ae;
+}
+.btn-list-1 {
+  width: 97%;
+  background: #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px auto;
+  border: 2px solid #f1f1f1;
+  gap: 10px;
+}
+
+.btn-list-1 button {
+  flex: 1 1 calc(20% - 10px); /* প্রতিটি বাটন 5 টাইমে ফিট হবে */
+  padding: 10px 15px;
+  background: #e65f25;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-list-1 button:hover {
+  background: #c94d14;
+}
+#claim-1{
+padding: 10px 15px;
+background: #333;
+color: yellow;
+border: none;
+border-radius: 5px;
+font-size: 17px;
+cursor: pointer;
+transition: background 0.3s ease;
+margin-left: 30px;
+margin-top: -5px;
+}
+.lebel2{
+
+    padding-bottom: 20px;
+    
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 10px ;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px 10px;
+}
+
